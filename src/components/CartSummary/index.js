@@ -17,7 +17,9 @@ const CartSummary = () => (
             Order Total <span>{sumTotal}</span>
           </h1>
           <p className="total-items">{cartList.length} Items in cart</p>
-          <button type="button">Checkout</button>
+          <button type="button" className="checkout-button">
+            Checkout
+          </button>
         </div>
       )
     }}
