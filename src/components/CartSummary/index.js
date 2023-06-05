@@ -1,4 +1,5 @@
 import CartContext from '../../context/CartContext'
+import './index.css'
 
 const CartSummary = () => (
   <CartContext.Consumer>
@@ -12,12 +13,12 @@ const CartSummary = () => (
       )
 
       return (
-        <div>
-          <h1>
-            Order Total <span>{sumTotal}</span>
+        <div className="summary-container">
+          <h1 className="heading-order">
+            Order Total : <span className="total">{sumTotal}</span>
           </h1>
           <p className="total-items">{cartList.length} Items in cart</p>
-          <button type="button" className="checkout-button">
+          <button type="button" className="button-checkout">
             Checkout
           </button>
         </div>
